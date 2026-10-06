@@ -20,6 +20,7 @@ The main model is **a query-based Transformer knowledge tracer**.
 
 Each previous learning interaction is represented as
 
+$$
 E_{\text{skill}}(s_t)
 +
 E_{\text{response}}(r_t)
@@ -33,6 +34,7 @@ A Transformer encoder contextualizes the student's recent sequence of interactio
 
 For a target skill $s^*$, the skill embedding is used as a query:
 
+$$
 \operatorname{MHA}(q, H, H),
 \qquad
 q = E_{\text{skill}}(s^*).
