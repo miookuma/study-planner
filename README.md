@@ -64,6 +64,7 @@ This allows the same student history to produce different predictions for differ
 # Results
 
 ![results](results.png)
+
 The Transformer outperforms both non-personalized baselines.
 This suggests that the **student's individual learning history contains useful predictive information beyond average skill difficulty**.
 
@@ -141,6 +142,7 @@ for each candidate skill
 6. recommends a study method for each selected skill
 
 In the demonstration, the planner creates a complete study schedule under a 90-minute total time budget.
+
 ![demonstration](demonstration.png)
 
 ## Main Takeaway
