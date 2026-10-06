@@ -2,7 +2,7 @@
 
 A Transformer-based adaptive study planner that models a student's learning history, estimates skill-specific success probabilities, and converts those predictions into personalized study priorities.
 
-# Project Goal
+## Project Goal
 
 **How can a model use a student's recent learning history to decide what they should study next?**
 
@@ -14,7 +14,7 @@ The system has two main components:
 
 The goal is to move beyond simply predicting whether a student will answer correctly and instead use those predictions to support an actual study decision.
 
-# Model
+## Model
 
 The main model is **a query-based Transformer knowledge tracer**.
 
@@ -52,7 +52,7 @@ $$
 
 This allows the same student history to produce different predictions for different skills rather than reducing the student to one overall score.
 
-# Experimental Setup
+## Experimental Setup
 
 - **Dataset**: ASSISTments 2009-2010 Skill Builder
 - **Task**: Binary prediction of whether the next response is correct
@@ -61,14 +61,14 @@ This allows the same student history to produce different predictions for differ
 - **Baselines**: Global average correctness, Skill-difficulty baseline
 - **Evaluation metrics**: Accuracy, ROC-AUC, Log loss, Brier score
 
-# Results
+## Results
 
 ![results](results.png)
 
 The Transformer outperforms both non-personalized baselines.
 This suggests that the **student's individual learning history contains useful predictive information beyond average skill difficulty**.
 
-# Adaptive Study Planner
+## Adaptive Study Planner
 
 The Transformer provides a predicted success probability $p$ for each candidate skill.
 The planner converts this prediction into a weakness score
